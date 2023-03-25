@@ -1,9 +1,19 @@
 package higherOrderFunction
 
 object functionHigherOrderSum {
+  // non tail-recursive
   def sum(f: Int => Int, a: Int, b: Int) : Int = {
     if (a > b) 0
     else f(a) + sum(f,a+1,b)
+  }
+
+  // tail-recursive
+  def sumTail(f: Int => Int, a:Int, b:Int) : Int = {
+    def sumAcc(a:Int, acc:Int) : Int = {
+      if (a > b) acc
+      else sumAcc(a+1,acc+f(a))
+    }
+    sumAcc(a,0)
   }
 
   def id(a: Int) : Int = a
