@@ -2,7 +2,7 @@ package note
 
 object balanceParenthesis {
   def balance(chars: List[Char]) : Boolean = {
-    balance(chars,0)
+    balance(chars, 0)
   }
 
   def balance(chars: List[Char], acc: Int) : Boolean = {
