@@ -1,0 +1,5 @@
+package higherOrderFunction
+
+object higherOrder {
+
+}
