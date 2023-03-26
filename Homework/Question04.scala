@@ -2,24 +2,35 @@ package Homework
 
 object Question04 {
 
-  def mergesort(list: List[Int]): List[Int] = {
-    if (list.length <= 1) list
+  def merge(left: List[Int], right: List[Int]): List[Int] = {
+    if (left.isEmpty && right.isEmpty) return List();
+    if (left.isEmpty) return right;
+    if (right.isEmpty) return left
+    if (left.head <= right.head) left.head :: merge(left.tail, right);
+    else right.head :: merge(left, right.tail);
+  }
+
+  def mergesort(l: List[Int]): List[Int] = {
+    var n = l.length
+    var mid = n / 2
+    if (mid == 0) return l;
     else {
-      val middle = list.length / 2
-      val (left, right) = (list.take(middle), list.drop(middle))
-      merge(mergesort(left), mergesort(right))
+      var left = splitList(l, 0, mid, 0);
+      var right = splitList(l, mid, n, 0);
+      merge(mergesort(left), mergesort(right));
     }
   }
 
-  def merge(left: List[Int], right: List[Int]): List[Int] = {
-    if (left.isEmpty) right
-    else if (right.isEmpty) left
-    else if (left.head < right.head) left.head :: merge(left.tail, right)
-    else right.head :: merge(left, right.tail)
+  def splitList(l: List[Int], start: Int, stop: Int, cnt: Int): List[Int] = {
+    if (cnt < start) splitList(l.tail, start, stop, cnt + 1)
+    else {
+      if (l.isEmpty || cnt == stop) return List();
+      else l.head :: splitList(l.tail, start, stop, cnt + 1);
+    }
   }
 
-  def main(args: Array[String]) : Unit = {
-    var myList = List(3,4,1,2)
-    println(mergesort(myList))
+  def main(args: Array[String]): Unit = {
+    var l = List(1, 5, 2, 3, 9, 4);
+    println(mergesort(l));
   }
 }

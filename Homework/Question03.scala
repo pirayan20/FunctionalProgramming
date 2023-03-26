@@ -14,7 +14,7 @@ object Question03 {
   }
 
   def main(args: Array[String]) : Unit = {
-    var l1 = List(1,2,3,4,5,6)
+    var l1 = List(1,2)
     var l2 = List(1,2,3,4,5)
     println(subList(l1,l2))
   }

@@ -8,8 +8,7 @@ object Question05 {
   }
 
   def palindrome(list: List[Any]) : Boolean = {
-    var reverse = myReverse(list)
-    palindrome(list,reverse)
+    palindrome(list,myReverse(list))
   }
 
   def palindrome(l1: List[Any],l2: List[Any]): Boolean = {
