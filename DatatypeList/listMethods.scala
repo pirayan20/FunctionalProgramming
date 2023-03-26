@@ -1,4 +1,4 @@
-package List
+package DatatypeList
 
 object listMethods {
   val myList: List[Int] = List()
@@ -10,7 +10,7 @@ object listMethods {
     println(listNum.tail)       // list without the first element
     println(myList.isEmpty)     // check empty
     println(listNum.reverse)    // reverse the List
-    println(List.fill(10)(1))   // fill with second parameter for first paremeter
+//    println(myList.fill(10)(1))   // fill with second parameter for first paremeter
     println(listStr.max)        // print the max value
     println(listStr.length)
   }

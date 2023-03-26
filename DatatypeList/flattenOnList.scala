@@ -1,4 +1,4 @@
-package List
+package DatatypeList
 
 object flattenOnList {
   val myList: List[Int] = List()

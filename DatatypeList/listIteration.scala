@@ -1,4 +1,4 @@
-package List
+package DatatypeList
 
 object listIteration {
   var listNum = List(1,2,3,4,5)

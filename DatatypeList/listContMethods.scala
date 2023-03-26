@@ -1,6 +1,6 @@
-package List
+package DatatypeList
 
-import List.listMoreMethods.member
+import DatatypeList.listMoreMethods.member
 
 object listContMethods {
   def append(l1: List[Any], l2: List[Any]) : List[Any] = {

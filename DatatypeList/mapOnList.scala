@@ -1,4 +1,4 @@
-package List
+package DatatypeList
 
 object mapOnList {
   val myList: List[Int] = List()

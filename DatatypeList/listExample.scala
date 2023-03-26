@@ -1,4 +1,4 @@
-package List
+package DatatypeList
 
 object listExample {
   // List is immutable

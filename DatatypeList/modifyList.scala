@@ -1,4 +1,4 @@
-package List
+package DatatypeList
 
 object modifyList {
   // this function is to add a certain amount to every element in the list
