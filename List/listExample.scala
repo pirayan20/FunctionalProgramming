@@ -1,4 +1,4 @@
-package package03
+package List
 
 object listExample {
   // List is immutable
@@ -16,6 +16,9 @@ object listExample {
     println(myList)
     println(listNum)
     println(listStr(1))
+
+    // appending List to a List
+    println(listNum ++ listNum2)
   }
 
 }

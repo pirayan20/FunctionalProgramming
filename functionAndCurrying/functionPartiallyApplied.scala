@@ -1,4 +1,4 @@
-package package02
+package functionAndCurrying
 
 object functionPartiallyApplied {
   def mul(x: Double, y: Double) : Double = {

@@ -1,4 +1,4 @@
-package package02
+package functionAndCurrying
 
 object Closure {
   var n = 5

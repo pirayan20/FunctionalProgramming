@@ -1,4 +1,4 @@
-package package01
+package Basic
 
 object switchCase {
   def main(args : Array[String]) : Unit = {

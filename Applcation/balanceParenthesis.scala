@@ -1,4 +1,4 @@
-package note
+package Applcation
 
 object balanceParenthesis {
   def balance(chars: List[Char]) : Boolean = {

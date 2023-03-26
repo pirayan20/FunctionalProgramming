@@ -1,4 +1,4 @@
-package package02
+package functionAndCurrying
 
 import java.util.Date  //Java
 

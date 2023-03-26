@@ -1,4 +1,4 @@
-package note
+package Applcation
 
 object pascalTriangle {
   def pascal(c: Int, r: Int) : Int = {

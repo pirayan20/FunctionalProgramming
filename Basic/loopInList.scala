@@ -1,4 +1,4 @@
-package package01
+package Basic
 
 object loopInList {
   def main(args : Array[String]) : Unit = {

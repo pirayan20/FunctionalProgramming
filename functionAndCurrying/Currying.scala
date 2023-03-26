@@ -1,4 +1,4 @@
-package package02
+package functionAndCurrying
 
 object Currying {
   def add(x: Int, y: Int) : Int = {

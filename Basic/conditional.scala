@@ -1,4 +1,4 @@
-package package01
+package Basic
 
 object conditional {
   def main(args : Array[String]) : Unit = {

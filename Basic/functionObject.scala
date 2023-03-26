@@ -1,4 +1,4 @@
-package package01
+package Basic
 
 object functionObject {
   // nested object to use in the main
