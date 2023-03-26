@@ -1,6 +1,6 @@
 package Homework
 
-object Question1 {
+object Question01 {
   def insertLast(x:Any, l:List[Any]) : List[Any] = l ++ List(x)
 
   def main(args : Array[String]) : Unit = {

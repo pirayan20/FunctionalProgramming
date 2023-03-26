@@ -1,6 +1,6 @@
 package Homework
 
-object Question3 {
+object Question03 {
   def member(x: Any, l: List[Any]): Boolean = {
     if (l.isEmpty) return false
     if (l.head == x) true

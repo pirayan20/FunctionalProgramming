@@ -1,6 +1,6 @@
 package Homework
 
-object Question5 {
+object Question05 {
 
   def myReverse(l: List[Any]): List[Any] = {
     if (l.isEmpty) return List()

@@ -1,6 +1,6 @@
 package Homework
 
-object Question8 {
+object Question08 {
 
   def next(list: List[Any]) : Any = {
     list.tail.head

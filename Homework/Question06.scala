@@ -1,6 +1,6 @@
 package Homework
 
-object Question6 {
+object Question06 {
 
   def square(x: Int) : Int = x*x
   def myMap(f:Int=>Int)(list:List[Int]):List[Int] = {

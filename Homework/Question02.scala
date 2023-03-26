@@ -1,6 +1,6 @@
 package Homework
 
-object Question2 {
+object Question02 {
   def insertInOrder(x:Int, list:List[Int]) : List[Int] = {
     if (list.isEmpty) return List(x)
     if (list.head > x) x :: list
