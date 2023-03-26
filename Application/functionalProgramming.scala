@@ -1,4 +1,4 @@
-package Applcation
+package Application
 
 object functionalProgramming {
 
