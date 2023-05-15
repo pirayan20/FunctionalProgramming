@@ -15,17 +15,17 @@ object final1 {
   }
    */
 
-  def swapPair(list: List[Any]): List[Any] = {
-    def go(l: List[Any], acc: List[Any]): List[Any] = {
-      if (l.isEmpty) acc
-      else if (l.tail.isEmpty) acc ++ List(l.head)
-      else {
-        val pair = List(l.tail.head, l.head)
-        go(l.tail.tail, acc ++ pair)
-      }
+  def helper(l: List[Any], acc: List[Any]): List[Any] = {
+    if (l.isEmpty) acc
+    else if (l.tail.isEmpty) acc ++ List(l.head)
+    else {
+      val pair = List(l.tail.head, l.head)
+      helper(l.tail.tail, acc ++ pair)
     }
+  }
 
-    go(list, Nil)
+  def swapPair(list: List[Any]): List[Any] = {
+    helper(list, Nil)
   }
 
   def main(args: Array[String]): Unit = {
